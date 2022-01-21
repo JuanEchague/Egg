@@ -1,8 +1,8 @@
-
 package egg;
 
 import java.util.Locale;
 import java.util.Scanner;
+
 /**
  * @author dark_
  */

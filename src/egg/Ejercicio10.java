@@ -7,24 +7,22 @@ import java.util.Scanner;
  *
  * @author dark_
  */
-public class Ejercicio9 {
+public class Ejercicio10 {
 
    //////////////////////////////////Codigo Principal/////////////////////////////////
     public static void main(String[] args) {
        Scanner read = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
-        System.out.println("Ingrese una frase o palabra de 8 letras: ");
+        System.out.println("Ingrese una palabra que comience con 'A': ");
         String f = read.next();
-        verificar_tamaño(f);
-        
+        verificar(f);
     }
     /////////////////////////////////Metodos//////////////////////////////////////////
-    public static void verificar_tamaño(String f){
-        if (f.length()!=8 ){
-            System.out.println("Incorrecto");
-        }else{
+    public static void verificar(String f){
+        if(f.substring(0,1).equalsIgnoreCase("A")){
             System.out.println("Correcto");
+        }else{
+            System.out.println("Incorrecto");
         }
-        
     }
     //////////////////////////////////Fin/////////////////////////////////////////////
 }
